@@ -1,6 +1,8 @@
-<h1>Cheatsheet de Git: Guía Rápida</h1>
-
-<h2>Configuración Inicial</h2>
+<p align="center">
+  <img src="photos/estructura_git-1024x960.png" style="width: 350px;">
+  
+</p>
+<h2 align="center">Configuración Inicial</h2>
 
 <pre><code> <!-- Configuración Inicial -->
 git config --global user.name "Vicent Muñoz Correcher" <!-- Configura el nombre de usuario -->
