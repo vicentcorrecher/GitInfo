@@ -6,7 +6,7 @@
 
 
 
-<h2>Configuración Inicial</h2>
+<h2>Configuración inicial</h2>
 <pre><code> <!-- Configuración Inicial -->
 git config --global user.name "Vicent Muñoz Correcher" <!-- Configura el nombre de usuario -->
 git config --global user.email vicent.correcher@gmail.com <!-- Configura el correo electrónico del usuario -->
@@ -22,7 +22,7 @@ git config --global color.ui true <!-- Habilita el uso de colores en la interfaz
 </ul>
 
 
-<h2>Iniciando y Clonando Repositorios</h2>
+<h2>Iniciando y clonando repositorios</h2>
 
 <pre><code> <!-- Iniciando y Clonando Repositorios -->
 git init <!-- Inicia un nuevo repositorio Git en el directorio actual -->
@@ -35,7 +35,7 @@ git clone &lt;url&gt; git-demo <!-- Clona un repositorio remoto en un directorio
 </ul>
 
 
-<h2>Realizando Cambios</h2>
+<h2>Realizando cambios</h2>
 
 <pre><code> <!-- Realizando Cambios -->
 git add . <!-- Agrega todos los archivos modificados y eliminados al área de preparación -->
@@ -56,7 +56,7 @@ git add docs/ <!-- Agrega todos los archivos en el directorio 'docs' al área de
 </ul>
 
 
-<h2>Realizando Commits</h2>
+<h2>Realizando commits</h2>
 
 <pre><code> <!-- Realizando Commits -->
 git commit -m "Texto que identifique por qué se hizo el commit" <!-- Crea un nuevo commit con un mensaje descriptivo -->
@@ -72,7 +72,7 @@ git commit --amend -m "Nuevo mensaje para el commit" <!-- Modifica el mensaje de
   <li><strong>git commit --amend -m "Nuevo texto":</strong> Este comando te permite cambiar el mensaje del último commit realizado.</li>
 </ul>
 
-<h2>Subiendo Cambios a Repositorios Remotos</h2>
+<h2>Subiendo cambios a repositorios remotos</h2>
 
 <pre><code> <!-- Subiendo Cambios a Repositorios Remotos -->
 git push origin master <!-- Sube los cambios locales al repositorio remoto en la rama 'master' -->
@@ -84,7 +84,7 @@ git push --tags <!-- Sube todas las etiquetas locales al repositorio remoto -->
   <li><strong>git push --tags:</strong> Este comando envía todas las etiquetas locales al repositorio remoto.</li>
 </ul>
 
-<h2>Visualizando Historial y Diferencias</h2>
+<h2>Visualizando historial y diferencias</h2>
 
 <pre><code> <!-- Visualizando Historial y Diferencias -->
 git log <!-- Muestra el historial de commits -->
@@ -102,7 +102,7 @@ git diff --staged <!-- Muestra las diferencias entre el área de preparación y 
   <li><strong>git diff --staged:</strong> Este comando muestra las diferencias entre los archivos en el área de preparación y el último commit realizado.</li>
 </ul>
 
-<h2>Manejando el HEAD y Ramas</h2>
+<h2>Manejando el HEAD y ramas</h2>
 
 <pre><code> <!-- Manejando el HEAD y Ramas -->
 git reset HEAD &lt;archivo&gt; <!-- Quita un archivo del área de preparación -->
@@ -126,7 +126,7 @@ git branch -D &lt;nameBranch&gt; <!-- Elimina una rama local incluso si tiene ca
   <li><strong>git branch -D &lt;nameBranch&gt;:</strong> Este comando elimina una rama local del repositorio, incluso si tiene cambios que no han sido fusionados.</li>
 </ul>
 
-<h2>Etiquetas (Tags) y Rebase</h2>
+<h2>Etiquetas (tags) y rebase</h2>
 
 <pre><code> <!-- Etiquetas (Tags) y Rebase -->
 git tag <!-- Lista todas las etiquetas existentes -->
@@ -147,7 +147,7 @@ git rebase &lt;nameBranch&gt; <!-- Realiza un rebase de la rama actual sobre la 
   <li><strong>git rebase &lt;nameBranch&gt;:</strong> Este comando realiza un rebase de la rama actual sobre la rama especificada, reorganizando el historial de commits de la rama actual para que se base en la última versión de la rama especificada.</li>
 </ul>
 
-<h2>Otros Comandos Útiles</h2>
+<h2>Otros comandos útiles</h2>
 
 <pre><code> <!-- Otros Comandos Útiles -->
 git status <!-- Muestra el estado del directorio de trabajo y el área de preparación -->
@@ -171,7 +171,7 @@ git rm &lt;archivo&gt; <!-- Elimina un archivo del repositorio y del sistema de 
 </ul>
 
 
-<h2>Forks: Trabajar con Repositorios Derivados</h2>
+<h2>Forks: Trabajar con repositorios derivados</h2>
 
 <pre><code> <!-- Forks: Trabajar con Repositorios Derivados -->
 git remote add upstream &lt;url&gt; <!-- Agrega un nuevo repositorio remoto como 'upstream' -->
