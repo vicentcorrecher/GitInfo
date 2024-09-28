@@ -1,10 +1,7 @@
 <p align="center">
   <img src="photos/estructura_git-1024x960.png" style="width: 350px;">
-  
 </p>
 <h1 align="center">CheatSheet Git</h1>
-
-
 
 <h2>Configuración inicial</h2>
 <pre><code> <!-- Configuración Inicial -->
@@ -14,13 +11,11 @@ git config --global user.email vicent.correcher@gmail.com <!-- Configura el corr
 git config --global color.ui true <!-- Habilita el uso de colores en la interfaz de usuario -->
 </code></pre>
 
-
 <ul>
   <li><strong> git config --global user.name: </strong> Este comando establece el nombre de usuario para tu cuenta de Git.</li>
   <li><strong> git config --global user.email</strong> Este comando establece el correo electrónico asociado con tu cuenta de Git.</li>
   <li><strong> git config --global color.ui true</strong> Este comando activa el uso de colores para una mejor visualización en la interfaz de usuario de Git.</li>
 </ul>
-
 
 <h2>Iniciando y clonando repositorios</h2>
 
@@ -33,7 +28,6 @@ git clone &lt;url&gt; git-demo <!-- Clona un repositorio remoto en un directorio
   <li><strong>git init: </strong> Este comando crea un nuevo repositorio Git en el directorio actual.</li>
   <li><strong>git clone &lt;url&gt; nombre:</strong> Este comando clona un repositorio remoto en un directorio local con el nombre especificado.</li>
 </ul>
-
 
 <h2>Realizando cambios</h2>
 
@@ -55,12 +49,38 @@ git add docs/ <!-- Agrega todos los archivos en el directorio 'docs' al área de
   <li><strong>git add docs/:</strong> Este comando agrega todos los archivos en el directorio 'docs' al área de preparación para el siguiente commit.</li>
 </ul>
 
+<h2>Ignorando archivos y carpetas</h2>
+
+<pre><code> <!-- Ignorando archivos y carpetas -->
+# Ignora todos los archivos .csv
+*.csv 
+
+# Ignora todos los archivos .xlsx
+*.xlsx
+
+# Ignora la carpeta __pycache__
+__pycache__/
+
+# Ignora checkpoints de Jupyter notebooks
+.ipynb_checkpoints/
+
+# Ignora una carpeta específica
+mi_carpeta/
+</code></pre>
+
+<ul>
+  <li><strong>*.csv:</strong> Este patrón ignora todos los archivos con la extensión `.csv` en el repositorio.</li>
+  <li><strong>*.xlsx:</strong> Este patrón ignora todos los archivos con la extensión `.xlsx`.</li>
+  <li><strong>__pycache__/:</strong> Este patrón ignora la carpeta `__pycache__` y su contenido.</li>
+  <li><strong>.ipynb_checkpoints/:</strong> Este patrón ignora los checkpoints creados por Jupyter notebooks.</li>
+  <li><strong>mi_carpeta/:</strong> Este patrón ignora una carpeta específica llamada `mi_carpeta` y todo su contenido.</li>
+</ul>
 
 <h2>Realizando commits</h2>
 
 <pre><code> <!-- Realizando Commits -->
 git commit -m "Texto que identifique por qué se hizo el commit" <!-- Crea un nuevo commit con un mensaje descriptivo -->
-git commit -a -m "Texto que identifique por qué se hizo el commit" <!-- Agrega todos los archivos modificados y eliminaidos al área de preparación y crea un nuevo commit con un mensaje -->
+git commit -a -m "Texto que identifique por qué se hizo el commit" <!-- Agrega todos los archivos modificados y eliminados al área de preparación y crea un nuevo commit con un mensaje -->
 git commit -a <!-- Agrega todos los archivos modificados y eliminados al área de preparación y abre el editor de texto para escribir un mensaje de commit -->
 git commit --amend -m "Nuevo mensaje para el commit" <!-- Modifica el mensaje del último commit -->
 </code></pre>
@@ -137,6 +157,7 @@ git rebase --skip <!-- Omite el commit actual durante el proceso de rebase -->
 git rebase --abort <!-- Cancela el proceso de rebase y restaura el estado anterior -->
 git rebase &lt;nameBranch&gt; <!-- Realiza un rebase de la rama actual sobre la rama especificada -->
 </code></pre>
+
 <ul>
   <li><strong>git tag:</strong> Este comando muestra todas las etiquetas existentes en el repositorio.</li>
   <li><strong>git tag -a &lt;version&gt; -m "Descripción de la versión":</strong> Este comando crea una nueva etiqueta anotada con un mensaje descriptivo para identificar una versión específica del proyecto.</li>
@@ -159,6 +180,7 @@ git merge &lt;nameBranch&gt; <!-- Fusiona los cambios de la rama especificada co
 git fetch <!-- Descarga los cambios del repositorio remoto sin fusionarlos con la rama local -->
 git rm &lt;archivo&gt; <!-- Elimina un archivo del repositorio y del sistema de archivos -->
 </code></pre>
+
 <ul>
   <li><strong>git status:</strong> Este comando muestra el estado actual de los archivos en el directorio de trabajo y en el área de preparación.</li>
   <li><strong>git checkout -- &lt;file&gt;:</strong> Este comando descarta los cambios locales en un archivo específico y lo restaura al estado en el que se encuentra en el último commit.</li>
@@ -166,10 +188,9 @@ git rm &lt;archivo&gt; <!-- Elimina un archivo del repositorio y del sistema de 
   <li><strong>git pull origin &lt;nameBranch&gt;:</strong> Este comando obtiene los cambios de una rama remota y los fusiona con la rama local actual.</li>
   <li><strong>git checkout &lt;nameBranch/tagname&gt;:</strong> Este comando cambia al commit asociado con la rama o etiqueta especificada.</li>
   <li><strong>git merge &lt;nameBranch&gt;:</strong> Este comando fusiona los cambios de una rama especificada con la rama actual.</li>
-  <li><strong>git merge &lt;nameBranch&gt; :</strong> Este comando descarga los cambios del repositorio remoto sin fusionarlos con la rama local actual.</li>
+  <li><strong>git fetch:</strong> Este comando descarga los cambios del repositorio remoto sin fusionarlos con la rama local actual.</li>
   <li><strong>git rm &lt;archivo&gt;:</strong> Este comando elimina un archivo del repositorio y del sistema de archivos local.</li>
 </ul>
-
 
 <h2>Forks: Trabajar con repositorios derivados</h2>
 
@@ -185,5 +206,3 @@ git merge upstream/master <!-- Fusiona los cambios del repositorio remoto 'upstr
   <li><strong>git merge upstream/master:</strong> Este comando fusiona los cambios del repositorio remoto 'upstream' en la rama actual.</li>
 </ul>
 
-</body>
-</html>
